@@ -1,68 +1,39 @@
-import React, { useState } from 'react';
-import rizaImg from '@/assets/riza.png';
+import React, { useState } from "react";
+import rizaImg from "@/assets/riza.png";
+import satu from "@/assets/1.webp";
 
 const projectsData = [
   {
     id: 1,
-    title: "INDOJAVATRIP",
-    description: "Tour & Travel Website Landing Page",
-    category: "Web",
-    image: rizaImg,
+    title:
+      "Research Article - Generation Z's Perspectives on environmental responsibility in tourism and hospitality careers",
+    description: "Universitas Pendidikan Indonesia",
+    category: "Research",
+    image: satu,
   },
-  {
-    id: 2,
-    title: "EduTech Platform",
-    description: "E-Learning Platform Interface",
-    category: "Web",
-    image: rizaImg,
-  },
-  {
-    id: 3,
-    title: "SEA Catering",
-    description: "Catering Service Platform",
-    category: "Web",
-    image: rizaImg,
-  },
-  {
-    id: 4,
-    title: "Hospitality Resort",
-    description: "Resort Management System",
-    category: "Web",
-    image: rizaImg,
-  },
-  {
-    id: 5,
-    title: "GatotKaca App",
-    description: "Mobile App Interface",
-    category: "Mobile",
-    image: rizaImg,
-  },
-  {
-    id: 6,
-    title: "Portfolio Design",
-    description: "UI/UX Design Concept",
-    category: "Design",
-    image: rizaImg,
-  }
 ];
 
-const categories = ["All", "Web", "Mobile", "Design", "Other"];
+const categories = ["All", "Research", "Marketing", "Event"];
 
 const Project = () => {
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const filteredProjects = activeCategory === "All"
-    ? projectsData
-    : projectsData.filter((project) => project.category === activeCategory);
+  const filteredProjects =
+    activeCategory === "All"
+      ? projectsData
+      : projectsData.filter((project) => project.category === activeCategory);
 
   return (
     <section id="projects" className="w-full py-20 bg-white">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
-        
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-xs font-bold tracking-[0.2em] text-gray-500 uppercase mb-3">Portfolio</p>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">Featured Projects</h2>
+          <p className="text-xs font-bold tracking-[0.2em] text-gray-500 uppercase mb-3">
+            Portfolio
+          </p>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
+            Featured Projects
+          </h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-sm md:text-base">
             A collection of my recent work, side projects, and experiments.
           </p>
@@ -88,7 +59,10 @@ const Project = () => {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {filteredProjects.map((project) => (
-            <div key={project.id} className="group cursor-pointer flex flex-col">
+            <div
+              key={project.id}
+              className="group cursor-pointer flex flex-col"
+            >
               {/* Image Container */}
               <div className="relative overflow-hidden rounded-xl mb-5 bg-gray-100 aspect-[4/3] border border-gray-100 shadow-sm transition-shadow duration-300 group-hover:shadow-md">
                 <img
@@ -99,21 +73,24 @@ const Project = () => {
               </div>
 
               {/* Text Container */}
-              <div className="flex justify-between items-start">
-                <div className="flex-1 pr-4">
-                  <h3 className="text-lg font-bold text-gray-900 capitalize tracking-tight">{project.title}</h3>
-                  <p className="text-sm text-gray-500 mt-1">{project.description}</p>
+              <div className="flex justify-between items-start text-pretty">
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-gray-900 capitalize tracking-tight">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 mt-1">
+                    {project.description}
+                  </p>
                 </div>
-                <div className="shrink-0">
+                {/* <div className="shrink-0">
                   <span className="text-[10px] font-semibold tracking-wider uppercase bg-gray-50 border border-gray-200 text-gray-600 px-2.5 py-1 rounded-full">
                     {project.category}
                   </span>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ const Hero = () => {
         </p>
 
         <h1 className="text-6xl md:text-7xl lg:text-[5.5rem] font-black leading-[1.05] tracking-tight">
-          <span className="block text-[#0f0f43] mb-2">Pornhub Athlete</span>
+          <span className="block text-[#0f0f43] mb-2">Athlete</span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-600 max-w-lg leading-relaxed pt-2">
