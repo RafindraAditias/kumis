@@ -11,14 +11,12 @@ const Hero = () => {
           Hey, I'm Riza 👋
         </p>
 
-        <h1 className="text-6xl md:text-7xl lg:text-[5.5rem] font-black leading-[1.05] tracking-tight">
-          <span className="block text-[#0f0f43] mb-2">Athlete</span>
+        <h1 className="text-5xl font-black leading-[1.05] tracking-tight">
+          <span className="block text-[#0f0f43] mb-2">Data-Driven Digital Marketing & Research Analyst </span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-600 max-w-lg leading-relaxed pt-2">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
-          placeat accusantium dolorum eligendi tempora saepe nulla in maiores
-          incidunt perspiciatis?
+          From Data to Decisions : A Data-Driven Marketer with Proven Experience in Academic Research and Publication, Specializing in Digital Marketing and Insight-Driven Strategies
         </p>
 
         {/* Button Get In Touch */}
