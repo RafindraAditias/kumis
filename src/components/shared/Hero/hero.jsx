@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Text Section */}
       <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
         <p className="text-xl md:text-2xl font-medium text-gray-700">
-          Hey, I'm Riza 👋
+          Hi, I'm Riza
         </p>
 
         <h1 className="text-5xl font-black leading-[1.05] tracking-tight">
