@@ -1,5 +1,5 @@
 import React from "react";
-import riza from "@/assets/riza.png";
+import riza from "@/assets/hero.png";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
