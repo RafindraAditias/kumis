@@ -1,36 +1,38 @@
 import React from 'react';
-import { Figma, Code2, PenTool, Type } from 'lucide-react';
+import { BookOpenText, BetweenHorizontalEnd, ChartArea, ShieldCheck } from 'lucide-react';
 
 const skillsData = [
   {
     id: 1,
-    title: "UI Design",
+    title: "Research Project Coordination",
     description: "We create intuitive, visually appealing interfaces that enhance user experience and navigation, ensuring your app is both beautiful and functional across all devices.",
     number: "01",
-    icon: Figma,
+    icon: BookOpenText,
   },
   {
     id: 2,
-    title: "Development",
+    title: "Primary Data Collection (FGD, in-depth interviews, surveys)",
     description: "Our team builds reliable, scalable solutions, delivering clean code that powers websites and mobile apps with top-notch performance and security.",
     number: "02",
-    icon: Code2,
+    icon: BetweenHorizontalEnd,
   },
   {
     id: 3,
-    title: "Graphic Design",
+    title: "Qualitative Thematic Analysis (coding, pattern identification – NVivo)",
     description: "We design responsive, user-friendly websites that blend aesthetics with functionality, providing a seamless experience across devices and reflecting your brand's identity.",
     number: "03",
-    icon: PenTool,
+    icon: ChartArea,
   },
   {
     id: 4,
-    title: "Branding",
+    title: "Digital Marketing - BNSP Certified",
     description: "We craft memorable brand identities, from logos to complete strategies, ensuring consistency and a strong connection with your audience across all platforms.",
     number: "04",
-    icon: Type,
+    icon: ShieldCheck,
   }
 ];
+
+
 
 const Skills = () => {
   return (
