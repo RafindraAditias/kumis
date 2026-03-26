@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Building2 } from 'lucide-react';
 
 const experienceData = [
@@ -12,7 +12,9 @@ const experienceData = [
       "Conducted 32 in-depth stakeholder interviews and administered surveys to 350 respondents, generating insights on demand patterns, consumer behavior, and regional market potential.",
       "Synthesized qualitative and quantitative findings into structured analytical outputs, identifying socio-economic patterns and behavioral drivers relevant to policy planning.",
       "Contributed to policy briefs and insight reports, translating research findings into actionable recommendations."
-    ]
+    ],
+    category: "Research",
+
   },
   {
     id: 2,
@@ -24,7 +26,9 @@ const experienceData = [
       "Supported manuscript screening and verification by assessing content quality, topic relevance, citation accuracy, and adherence to journal guidelines.",
       "Conducted preliminary reviews to ensure document completeness, formatting consistency, and identify potential plagiarism.",
       "Coordinated with editors and the editorial team to streamline editing, revision, and publication processes in accordance with established standards and timelines."
-    ]
+    ],
+    category: "Research",
+
   },
   {
     id: 3,
@@ -36,7 +40,9 @@ const experienceData = [
       "Led and managed tour operations from departure to return, ensuring the itinerary ran smoothly and on schedule.",
       "Acted as the main liaison between participants, vendors, and stakeholders including hotels, transport providers, and attractions to maintain service quality.",
       "Provided destination insights, handled participant needs and complaints, and ensured a safe, comfortable, and memorable travel experience."
-    ]
+    ],
+    category: "Research",
+
   },
   {
     id: 4,
@@ -48,7 +54,9 @@ const experienceData = [
       "Supported a research project on Generation Z and environmental responsibility, resulting in a Scopus Q1 publication in Tourism Recreation Research.",
       "Assisted in literature reviews, Focus Group Discussion (FGD) coordination, and qualitative data collection.",
       "Conducted thematic coding and qualitative analysis, contributing to analytical sections of the research paper."
-    ]
+    ],
+    category: "Research",
+
   },
   {
     id: 5,
@@ -60,7 +68,9 @@ const experienceData = [
       "Designed and managed daily content strategies across Instagram, Facebook, and TikTok to increase brand awareness and engagement.",
       "Produced persuasive copywriting and visual materials including photos and short videos to support digital campaigns.",
       "Analyzed content performance using insights data to optimize campaign effectiveness."
-    ]
+    ],
+    category: "Research",
+
   },
   {
     id: 6,
@@ -72,7 +82,9 @@ const experienceData = [
       "Contributed to a mixed-methods research project published in a Scopus Q1 journal.",
       "Conducted 30 in-depth interviews and coordinated survey data collection from 300 respondents.",
       "Managed data transcription, documentation, and preliminary analysis to ensure data accuracy and methodological transparency."
-    ]
+    ],
+    category: "Research",
+
   },
   {
     id: 7,
@@ -84,7 +96,9 @@ const experienceData = [
       "Drove sales performance by identifying market opportunities and executing targeted sales strategies.",
       "Developed customized product concepts aligned with customer needs to enhance satisfaction and retention.",
       "Built and maintained strong client relationships, leading negotiations to secure profitable deals and long-term partnerships."
-    ]
+    ],
+    category: "Research",
+
   },
   {
     id: 8,
@@ -96,21 +110,46 @@ const experienceData = [
       "Supported event-based projects including festivals, concerts, and exhibitions, ensuring smooth coordination from planning to execution.",
       "Assisted in internal and external stakeholder communication, including tenants, visitors, and partners.",
       "Delivered clear information and handled administrative coordination to support operational effectiveness and public engagement."
-    ]
+    ],
+    category: "Research",
+
   }
 ];
 
+const categories = ["All", "Research", "Marketing", "Event"];
+
+
 const Experience = () => {
+  const [activeExperience, setActiveExperience] = useState("All");
+
+  const filteredExperience = activeExperience === "All" ? experienceData : experienceData.filter((experience) => experience.category === activeExperience);
+
   return (
     <section id="experience" className="w-full py-20">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16 tracking-tight">
           Experience
         </h2>
-
+        {/* Filter Tabs */}
+        <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-16">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setActiveExperience(category)}
+              className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 border ${
+                activeExperience === category
+                  ? "bg-[#0f0f43] text-white border-black"
+                  : "bg-white text-gray-600 border-gray-300 hover:border-gray-400 hover:text-gray-900"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
         <div className="max-w-4xl mx-auto">
+          
           <div className="relative border-l border-gray-200 ml-4 md:ml-10">
-            {experienceData.map((item) => (
+            {filteredExperience.map((item) => (
               <div key={item.id} className="relative pl-8 md:pl-12 last:pb-0 group">
                 <div className="absolute -left-[5px] top-1.5 w-[9px] h-[9px] rounded-full bg-black group-hover:scale-125 transition-transform duration-300"></div>
 
