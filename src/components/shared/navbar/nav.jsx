@@ -13,7 +13,7 @@ const Nav = () => {
   return (
     <div className="w-full flex justify-around items-center py-2 gap-40">
       <div>
-        <h1 className="text-lg font-bold">KUMIS PORTO</h1>
+        <h1 className="text-lg font-bold uppercase">riza portfolio</h1>
       </div>
       <NavigationMenu>
         <NavigationMenuList>

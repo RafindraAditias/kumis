@@ -41,7 +41,7 @@ const experienceData = [
       "Acted as the main liaison between participants, vendors, and stakeholders including hotels, transport providers, and attractions to maintain service quality.",
       "Provided destination insights, handled participant needs and complaints, and ensured a safe, comfortable, and memorable travel experience."
     ],
-    category: "Research",
+    category: "Tour and Travel",
 
   },
   {
@@ -69,7 +69,7 @@ const experienceData = [
       "Produced persuasive copywriting and visual materials including photos and short videos to support digital campaigns.",
       "Analyzed content performance using insights data to optimize campaign effectiveness."
     ],
-    category: "Research",
+    category: "Marketing",
 
   },
   {
@@ -97,7 +97,7 @@ const experienceData = [
       "Developed customized product concepts aligned with customer needs to enhance satisfaction and retention.",
       "Built and maintained strong client relationships, leading negotiations to secure profitable deals and long-term partnerships."
     ],
-    category: "Research",
+    category: "Marketing",
 
   },
   {
@@ -111,12 +111,12 @@ const experienceData = [
       "Assisted in internal and external stakeholder communication, including tenants, visitors, and partners.",
       "Delivered clear information and handled administrative coordination to support operational effectiveness and public engagement."
     ],
-    category: "Research",
+    category: "Marketing",
 
   }
 ];
 
-const categories = ["All", "Research", "Marketing", "Event"];
+const categories = ["All", "Research", "Marketing", "Event", "Tour and Travel"];
 
 
 const Experience = () => {
@@ -127,7 +127,7 @@ const Experience = () => {
   return (
     <section id="experience" className="w-full py-20">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16 tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-10 tracking-tight">
           Experience
         </h2>
         {/* Filter Tabs */}

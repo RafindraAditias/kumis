@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import rizaImg from "@/assets/riza.png";
 import satu from "@/assets/1.webp";
+import dua from "@/assets/dua.png";
+import empat from "@/assets/empat.png";
+import tiga from "@/assets/tiga.jpg";
+import lima from "@/assets/lima.jpeg";
 
 const projectsData = [
   {
@@ -10,6 +14,44 @@ const projectsData = [
     description: "Universitas Pendidikan Indonesia",
     category: "Research",
     image: satu,
+    link: "",
+  },
+  {
+    id: 2,
+    title:
+      "Editorial Assistant for SABA: Journal of Tourism Research (SINTA-Indexed Journal)",
+    description:
+      "Tourism Marketing Management – Universitas Pendidikan Indonesia",
+    category: "Research",
+    image: dua,
+    link: "https://ejournal.upi.edu/index.php/sabajournal",
+  },
+  {
+    id: 3,
+    title:
+      "Research Assistant – Contributed to policy brief and research article on Bandung Regency Tourism Development",
+    description:
+      "Bapperida Kabupaten Bandung & Universitas Pendidikan Indonesia (Collaborative Project)",
+    category: "Research",
+    image: empat,
+    link: "https://drive.google.com/file/d/1KMGHhQqSTMndm914Tb6uTqQgQnp-eovK/view?usp=sharing",
+  },
+  {
+    id: 4,
+    title:
+      "Research Enumerator – Contributed to research article: “Hospitality on the Streets: A Mixed-Method Study of Indonesian Street Food Micro-Enterprises”",
+    description: "International Research Project (Independent)",
+    category: "Research",
+    image: tiga,
+    link: "https://ejournal.upi.edu/index.php/sabajournal",
+  },
+  {
+    id: 5,
+    title: "Social Media Marketing - Instagram @akarwisatakhatulistiwa",
+    description: "Akar Wisata Tour & Travel",
+    category: "Marketing",
+    image: lima,
+    link: "https://www.instagram.com/akarwisatakhatulistiwa/",
   },
 ];
 
@@ -64,29 +106,40 @@ const Project = () => {
               className="group cursor-pointer flex flex-col"
             >
               {/* Image Container */}
-              <div className="relative overflow-hidden rounded-xl mb-5 bg-gray-100 aspect-[4/3] border border-gray-100 shadow-sm transition-shadow duration-300 group-hover:shadow-md">
+              {/* <div className="relative overflow-hidden rounded-xl mb-5 bg-gray-100 aspect-[4/3] border border-gray-100 shadow-sm transition-shadow duration-300 group-hover:shadow-md">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                />
+              </div> */}
+
+              {/* Text Container */}
+              <div className="flex text-pretty">
+                <div className="flex-1 ">
+                  <div className="relative overflow-hidden rounded-xl mb-5 bg-gray-100 aspect-[4/3] border border-gray-100 shadow-sm transition-shadow duration-300 group-hover:shadow-md">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
-
-              {/* Text Container */}
-              <div className="flex justify-between items-start text-pretty">
-                <div className="flex-1">
                   <h3 className="text-lg font-bold text-gray-900 capitalize tracking-tight">
                     {project.title}
                   </h3>
-                  <p className="text-sm text-gray-500 mt-1">
+                  <p className="text-sm text-gray-500 mt-1 pb-3">
                     {project.description}
                   </p>
-                </div>
-                {/* <div className="shrink-0">
-                  <span className="text-[10px] font-semibold tracking-wider uppercase bg-gray-50 border border-gray-200 text-gray-600 px-2.5 py-1 rounded-full">
-                    {project.category}
+                  <span className="">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      className="text-xs text-white px-5 hover:bg-grey-400 bg-[#0f0f43] py-2 rounded-full my-10"
+                    >
+                      View Project
+                    </a>
                   </span>
-                </div> */}
+                </div>
               </div>
             </div>
           ))}

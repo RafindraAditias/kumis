@@ -10,21 +10,28 @@ const About = () => {
         {/* Left Column - Text Content */}
         <div className="w-full lg:w-1/2 flex flex-col items-start ">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
-            Who I Am
+            M. Riza Nur Sya'ban
+            <hr className="w-full bg-black py-[1px] my-5" />
           </h1>
-          <div className="mt-2 mb-6">
-            <h3 className="text-xl md:text-2xl font-medium text-gray-800 mb-2">
-              M. Riza Nur Sya'ban
-            </h3>
-            <div className="w-12 h-1 bg-gray-900 rounded-full shrink-0"></div>
-          </div>
 
-          <div className="space-y-5 text-gray-600 text-sm md:text-base leading-relaxed pb-10">
+          <div className="space-y-5 text-gray-600 text-sm md:text-base leading-relaxed pb-10 text-justify">
             <p>
-              Fresh graduate Data-Driven Digital Marketing & Research Analyst
-              specializing in market research, analytics, and digital strategy.
-              Skilled in transforming data into actionable insights with a
-              strong foundation in academic research and publication.
+              Fresh graduate with a strong foundation in data-driven digital
+              marketing, market research, and analytics. Developed the ability
+              to interpret data, identify relevant patterns, and turn findings
+              into actionable insights that support strategic decision-making.
+              Demonstrates a strong interest in using data to understand market
+              trends, consumer behavior, and digital performance.
+              <br />
+              <br />
+
+              Supported by experience in academic research, publication, and
+              evidence-based analysis, with strong attention to detail and
+              structured thinking. Able to work with both qualitative and
+              quantitative information to produce clear, relevant, and
+              insight-driven outputs. Brings an analytical mindset, research
+              capability, and strong willingness to learn in dynamic
+              professional environments.
             </p>
             <p className="flex gap-2 font-semibold">
               <GraduationCap />
@@ -48,7 +55,7 @@ const About = () => {
             {/* Top Left Circle Decoration */}
             <div className="absolute top-0 left-0 w-32 h-32 bg-stone-200/50 rounded-br-[100px]"></div>
             {/* Bottom Right Circle Decoration */}
-            <div className="absolute bottom-4 right-4 w-16 h-16 border border-black/80 rounded-full bg-transparent z-20"></div>
+            {/* <div className="absolute bottom-4 right-4 w-16 h-16 border border-black/80 rounded-full bg-transparent z-20"></div> */}
 
             <img
               src={riza}
