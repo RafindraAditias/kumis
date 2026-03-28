@@ -53,6 +53,23 @@ const projectsData = [
     image: lima,
     link: "https://www.instagram.com/akarwisatakhatulistiwa/",
   },
+  {
+    id: 6,
+    title:
+      "Policy Brief & Infographic – Regenerative Tourism Study in Bandung Regency",
+    description: "Universitas Pendidikan Indonesia",
+    category: "Research",
+    image: lima,
+    link: "https://drive.google.com/file/d/19Ndr9UiwEOALBLXxvDGaPM_JP6xPa9YJ/view?usp=sharing",
+  },
+  {
+    id: 7,
+    title: "Social Media Content – Instagram @tpjazzfest",
+    description: "The Papandayan Jazz Festival",
+    category: "Event",
+    image: lima,
+    link: "https://www.instagram.com/reel/DB1D6pORZOL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
 ];
 
 const categories = ["All", "Research", "Marketing", "Event"];
@@ -118,12 +135,12 @@ const Project = () => {
               <div className="flex text-pretty">
                 <div className="flex-1 ">
                   <div className="relative overflow-hidden rounded-xl mb-5 bg-gray-100 aspect-[4/3] border border-gray-100 shadow-sm transition-shadow duration-300 group-hover:shadow-md">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </div>
                   <h3 className="text-lg font-bold text-gray-900 capitalize tracking-tight">
                     {project.title}
                   </h3>
