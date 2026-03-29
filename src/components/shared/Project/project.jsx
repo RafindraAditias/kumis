@@ -95,9 +95,6 @@ const Project = () => {
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
             Featured Projects
           </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto text-sm md:text-base">
-            A collection of my recent work, side projects, and experiments.
-          </p>
         </div>
 
         {/* Filter Tabs */}

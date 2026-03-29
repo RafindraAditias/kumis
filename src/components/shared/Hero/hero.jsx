@@ -11,11 +11,11 @@ const Hero = () => {
           Hi, I'm Riza
         </p>
 
-        <h1 className="text-5xl font-black leading-[1.05] tracking-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-[54px] font-black leading-[1.15] md:leading-[1.05] tracking-tight">
           <span className="block text-[#0f0f43] mb-2">Data-Driven Digital Marketing & Research Analyst </span>
         </h1>
 
-        <p className="text-lg md:text-xl text-gray-600 max-w-lg leading-relaxed pt-2">
+        <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-lg leading-relaxed pt-2">
           From Data to Decisions : A Data-Driven Marketer with Proven Experience in Academic Research and Publication, Specializing in Digital Marketing and Insight-Driven Strategies
         </p>
 

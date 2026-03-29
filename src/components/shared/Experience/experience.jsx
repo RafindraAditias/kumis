@@ -205,16 +205,18 @@ const Experience = () => {
               >
                 <div className="absolute -left-[5px] top-1.5 w-[9px] h-[9px] rounded-full bg-black group-hover:scale-125 transition-transform duration-300"></div>
 
-                <div className="md:flex-row gap-4 md:gap-8 items-start ">
-                  <div className="shrink-0 flex gap-4">
-                    <span className="bg-black text-white text-[10px] md:text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap tracking-wide">
-                      {item.date}
-                    </span>
+                <div className="flex flex-col md:flex-row gap-3 md:gap-8 items-start">
+                  <div className="shrink-0 flex flex-col gap-2 md:w-1/3">
+                    <div className="self-start">
+                      <span className="bg-black text-white text-[10px] md:text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap tracking-wide">
+                        {item.date}
+                      </span>
+                    </div>
                     <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
                       {item.title}
                     </h3>
                   </div>
-                  <div className="flex-1 my-5">
+                  <div className="flex-1 my-2 md:my-0">
                     
 
                     <div className="mt-2.5 flex items-center gap-2 text-sm font-medium text-gray-500">
