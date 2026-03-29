@@ -5,6 +5,8 @@ import dua from "@/assets/dua.png";
 import empat from "@/assets/empat.png";
 import tiga from "@/assets/tiga.jpg";
 import lima from "@/assets/lima.jpeg";
+import jazz from "@/assets/jaz.png";
+import policy from "@/assets/policy.jpeg";
 
 const projectsData = [
   {
@@ -59,7 +61,7 @@ const projectsData = [
       "Policy Brief & Infographic – Regenerative Tourism Study in Bandung Regency",
     description: "Universitas Pendidikan Indonesia",
     category: "Research",
-    image: lima,
+    image: policy,
     link: "https://drive.google.com/file/d/19Ndr9UiwEOALBLXxvDGaPM_JP6xPa9YJ/view?usp=sharing",
   },
   {
@@ -67,7 +69,7 @@ const projectsData = [
     title: "Social Media Content – Instagram @tpjazzfest",
     description: "The Papandayan Jazz Festival",
     category: "Event",
-    image: lima,
+    image: jazz,
     link: "https://www.instagram.com/reel/DB1D6pORZOL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
 ];
