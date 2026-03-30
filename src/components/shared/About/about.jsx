@@ -24,7 +24,6 @@ const About = () => {
               trends, consumer behavior, and digital performance.
               <br />
               <br />
-
               Supported by experience in academic research, publication, and
               evidence-based analysis, with strong attention to detail and
               structured thinking. Able to work with both qualitative and
@@ -42,11 +41,15 @@ const About = () => {
               GPA : 3.86/4.00
             </p>
           </div>
-
-          <button className="group flex items-center gap-2 bg-[#0f0f43] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors shadow-md hover:shadow-lg">
-            Download CV
-            <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
-          </button>
+          <a
+            href="https://drive.google.com/file/d/1DqfPvsdKp4Vn1L06q0sMsIPmgie4uFkq/view"
+            target="_blank"
+          >
+            <button className="group flex items-center gap-2 bg-[#0f0f43] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors shadow-md hover:shadow-lg">
+              Download CV
+              <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform"></Download>
+            </button>
+          </a>
         </div>
 
         {/* Right Column - Image Container */}

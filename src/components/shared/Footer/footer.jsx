@@ -49,7 +49,7 @@ const Footer = () => {
               <div className="flex flex-col gap-1">
                 <span className="text-zinc-500 text-sm font-light">Address</span>
                 <span className="text-zinc-200 text-base font-medium tracking-wide leading-relaxed max-w-sm">
-                  Cisalak, Cibeber, Cianjur, Jawa Barat 43262
+                  Bandung, West Java, Indonesia
                 </span>
               </div>
             </div>

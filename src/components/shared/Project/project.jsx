@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import rizaImg from "@/assets/riza.png";
 import satu from "@/assets/1.webp";
 import dua from "@/assets/dua.png";
 import empat from "@/assets/empat.png";
