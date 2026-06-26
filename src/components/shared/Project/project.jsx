@@ -76,7 +76,7 @@ const projectsData = [
     title: "Social Media Management Portfolio",
     description: "Growing Brand’s Digital Presence Through Strategic Content Management",
     category: "Event",
-    image: jazz,
+    image: lima,
     link: "https://www.instagram.com/reel/DB1D6pORZOL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
 ];
