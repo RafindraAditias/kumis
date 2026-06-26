@@ -69,7 +69,7 @@ const projectsData = [
     description: "The Papandayan Jazz Festival",
     category: "Event",
     image: jazz,
-    link: "https://drive.google.com/file/d/1kVmskGBEkH_r6ytLlOWX7mHhQQW4vJVR/view",
+    link: "https://www.instagram.com/reel/DB1D6pORZOL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ const projectsData = [
     description: "Growing Brand’s Digital Presence Through Strategic Content Management",
     category: "Event",
     image: lima,
-    link: "https://www.instagram.com/reel/DB1D6pORZOL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    link: "https://drive.google.com/file/d/1kVmskGBEkH_r6ytLlOWX7mHhQQW4vJVR/view",
   },
 ];
 
