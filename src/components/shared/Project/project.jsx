@@ -97,7 +97,7 @@ const Project = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <p className="text-xs font-bold tracking-[0.2em] text-gray-500 uppercase mb-3">
-            Portfolio
+            Portfolio 
           </p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
             Featured Projects
