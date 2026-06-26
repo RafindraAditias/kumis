@@ -146,6 +146,19 @@ const experienceData = [
     category: "Research",
   },
   {
+    id: 13,
+    date: "Sept 2025 – Oct 2025",
+    title: "Social Media Analyst",
+    company: "Independent Project",
+    location: "Bandung, Indonesia",
+    descriptions: [
+      "Monitored and analyzed up to 100 daily social media posts related to public figure clients across multiple platforms, identifying key narratives, audience reactions, and emerging trends.",
+      "Conducted content classification and manual sentiment analysis on up to 2,000 comments per day, providing insights into public perception and engagement patterns.",
+      "Evaluated social media performance for multiple government agency Instagram accounts using the FAIR framework (Followers, Activity, Interaction, and Reach), delivering performance reports and data-driven recommendations.",
+    ],
+    category: "Marketing",
+  },
+  {
     id: 12,
     date: "Nov 2025 – Dec 2025",
     title: "Research Assistant",
